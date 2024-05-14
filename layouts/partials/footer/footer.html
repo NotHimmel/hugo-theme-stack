@@ -1,5 +1,11 @@
 {{- $ThemeVersion := "3.26.0" -}}
 <footer class="site-footer">
+    <!-- Add blog running time -->
+    <section class="running-time">
+    观测到的上一次世界线变动已经过去了
+    <span id="runningdays" class="running-days"></span>
+    </section>
+    
     <section class="copyright">
         &copy; 
         {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}

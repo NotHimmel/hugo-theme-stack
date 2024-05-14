@@ -17,6 +17,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --accent-color-darker: #2c3e50;
     --accent-color-text: #fff;
     --body-text-color: #707070;
+    --emphasize-text-color: #9e8f9f; // Add emphasize font color
 
     --tag-border-radius: 24px; // Change from 4px to make it round corner
     --category-border-radius: 4px; // Add category border setting
@@ -28,6 +29,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --scrollbar-track: var(--body-background);
 
     &[data-scheme="dark"] {
+        --emphasize-text-color: #d5cfc4; // Add emphasize font color for dark scheme
         --body-background: #303030;
         --accent-color: #ecf0f1;
         --accent-color-darker: #bdc3c7;
