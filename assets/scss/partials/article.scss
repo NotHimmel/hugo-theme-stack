@@ -177,7 +177,16 @@
     @include respond(md) {
         --image-size: 60px;
     }
-
+    //在归档列表里面显示文章副标题/简介
+    .article-subtitle {
+        margin-top: -5px;
+        font-size: 1.5rem;
+    
+        @include respond(md) {
+            font-size: 1.6rem;
+        }
+    }
+    
     article {
         & > a {
             display: flex;
