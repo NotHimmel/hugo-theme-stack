@@ -5,7 +5,7 @@
     观测到上一次世界线变动已经
     <span id="runningdays" class="running-days"></span>
     </section>
-    
+
     <section class="copyright">
         &copy; 
         {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
@@ -13,7 +13,11 @@
         {{ end }}
         {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
     </section>
-    
+
+    <section class="moe-icp">
+        <a href="https://icp.gov.moe/?keyword=20242828" target="_blank">萌ICP备20242828号</a>
+    </section>
+
     <section class="powerby">
         {{ with .Site.Params.footer.customText }}
             {{ . | safeHTML }} <br/>
