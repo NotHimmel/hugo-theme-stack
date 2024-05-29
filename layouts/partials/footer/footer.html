@@ -8,8 +8,10 @@
 
     <section class="busuanzi-visitor">
     <!-- Add busuanzi不蒜子 count -->
+    {{ if .Site.Params.busuanzi.enable -}}
     <span id="busuanzi_container_site_pv" > 世界线变动次数 <span id="busuanzi_value_site_pv"></span> 次 </span>·
     <span id="busuanzi_container_site_uv" > 世界线总数 <span id="busuanzi_value_site_uv"></span> 人</span>
+    {{ end }}
     </section>
     
 
